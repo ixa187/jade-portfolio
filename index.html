@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>jade - Portfolio</title>
+    <!-- Link CSS File-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Font (Space Grotesk)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Menu and Profile -->
+      <div class="menu-profile">
+        <!-- Header -->
+        <header>
+          <nav>
+            <!-- Dark-ligth mode btn -->
+            <button class="dark-light-btn bg-gradient">
+              <i class="fa-regular fa-sun"></i>
+            </button>
+            <!-- Nav Menu -->
+            <ul>
+              <!-- About -->
+              <li>
+                <a href="#about" data-label="About" class="active"
+                  ><i class="fa-solid fa-address-book"></i
+                ></a>
+              </li>
+
+              <!-- Projects -->
+              <li>
+                <a href="#projects" data-label="Projects"
+                  ><i class="fa-solid fa-briefcase"></i
+                ></a>
+              </li>
+
+              <!-- Skill -->
+              <li>
+                <a href="#skills" data-label="Skills"
+                  ><i class="fa-solid fa-layer-group"></i
+                ></a>
+              </li>
+
+              <!-- Education and Work (Resume) -->
+              <li>
+                <a href="#resume" data-label="Resume"
+                  ><i class="fa-solid fa-file-lines"></i
+                ></a>
+              </li>
+
+              <!-- Clients -->
+              <!-- <li>
+                <a href="#" data-label="Testimonials"
+                  ><i class="fa-solid fa-comment-dots"></i
+                ></a>
+              </li> -->
+
+              <!-- Contact -->
+              <li>
+                <a href="#contact" data-label="Contact"
+                  ><i class="fa-solid fa-paper-plane"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Profile Container-->
+        <div class="profile-container">
+          <div class="user-profile bg-gradient">
+            <!-- profile box -->
+            <div class="user-profile-container">
+              <!-- Profile Image -->
+              <div class="user-profile-img">
+                <img src="images/profile-1.jpg" alt="Jomar Jade Ballebas" />
+              </div>
+
+              <!-- Text -->
+              <div class="user-profile-text">
+                <span>Web Developer</span>
+                <h1>Jomar Jade</h1>
+
+                <!--Socials -->
+                <div class="profile-social-container">
+                  <!-- GitHub -->
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <!-- Facebook -->
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <!-- Instagram -->
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- Twitter -->
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- btns -->
+            <div class="user-profile-btns">
+              <a href="cv/JomarJade-CV.pdf" download taret="_blank"
+                >Download CV</a
+              >
+              <a href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- all content -->
+      <div class="all-content">
+        <!-- About Section-->
+        <section id="about" class="section-container">
+          <h3>Hello, I'm a <span id="role">Web Developer</span></h3>
+          <h1>
+            Full Stack Web Developer and <span>Laravel</span> Developer based in
+            Philippines
+          </h1>
+          <p>
+            A dedicated Bachelor of Science in Information Technology graduate
+            with a major in Programming, complemented by real-world experience
+            as a Web Developer Intern. Skilled in PHP, Laravel, MySQL, HTML,
+            CSS, JavaScript, jQuery, and version control using Git/GitHub.
+            Passionate about building user-centric, scalable web solutions and
+            eager to contribute to a dynamic development team.
+          </p>
+          <!-- Projects Completed-->
+          <!-- <div class="project-container-about">
+           
+            <div class="project-container-box">
+              <span>1</span>
+              <strong>Completed Projects</strong>
+            </div>
+
+            
+            <div class="project-container-box">
+              <span>1+</span>
+              <strong>Years of Exerience</strong>
+            </div>
+
+            
+            <div class="project-container-box">
+              <span>2</span>
+              <strong>Personal Projects (Development)</strong>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- Projects Secion-->
+        <section id="projects" class="section-container">
+          <!-- Heading -->
+          <div class="section-heading">
+            <span><i class="fa-solid fa-briefcase"></i> Projects</span>
+            <h3>Explore Projects by Technology</h3>
+          </div>
+
+          <!-- Filter -->
+          <ul class="project-list">
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="Laravel">Laravel</li>
+            <!-- Add Here for more projects -->
+            <!-- <li data-filter="Figma">Figma</li> -->
+          </ul>
+
+          <!-- Project Container -->
+          <div class="project-container">
+            <!-- Project Box -->
+            <a
+              href="https://prms.ccsit.info/"
+              class="project-box"
+              data-category="Laravel"
+              target="_blank"
+            >
+              <!-- Image -->
+              <div class="project-box-img">
+                <img src="images/project-1.png" alt="project 1" />
+              </div>
+
+              <div class="project-box-text-container">
+                <!-- details -->
+                <div class="project-box-text">
+                  <strong>Rural Health Unit Information System</strong>
+                  <span>Laravel</span>
+                </div>
+
+                <!-- link icon -->
+                <div class="project-box-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </a>
+
+            <!-- Project Box -->
+            <!-- <a
+              href="#"
+              class="project-box"
+              data-category="Figma"
+              target="_blank"
+            >
+       
+              <div class="project-box-img">
+                <img src="images/project-1.png" alt="project 1" />
+              </div>
+
+              <div class="project-box-text-container">
+          
+                <div class="project-box-text">
+                  <strong>Figma Project</strong>
+                  <span>figma</span>
+                </div>
+
+            
+                <div class="project-box-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </a> -->
+          </div>
+        </section>
+
+        <!-- Skills Section-->
+        <section id="skills" class="section-container">
+          <!-- Heading -->
+          <div class="section-heading">
+            <span
+              ><i class="fa-solid fa-layer-group"></i> Technical Skills</span
+            >
+            <h3>Technologies</h3>
+          </div>
+
+          <!-- Skills Container -->
+          <div class="skill-box-container">
+            <!-- PHP -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-php" style="color: #8d96c0"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+
+            <!-- Laravel -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-laravel" style="color: #f22b02"></i>
+                <span>Laravel</span>
+              </div>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-html5" style="color: #e5532d"></i>
+                <span>HTML</span>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-css3-alt" style="color: #6b399c"></i>
+                <span>CSS</span>
+              </div>
+            </div>
+
+            <!-- Javascript -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-js" style="color: #f0dc55"></i>
+                <span>Javascript</span>
+              </div>
+            </div>
+
+            <!-- jQuery -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <img src="images/jquery.png" alt="jQuery Logo" />
+                <span>jQuery</span>
+              </div>
+            </div>
+
+            <!-- Git -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-git-alt" style="color: #f05639"></i>
+                <span>Git</span>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <i class="fa-brands fa-square-github" style="color: white"></i>
+                <span>GitHub</span>
+              </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <img src="images/mysql.png" alt="MySQL Logo" />
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-box bg-gradient" data-aos="fade-up">
+              <div class="skill-box-content">
+                <img src="images/python-logo.svg" alt="Python Logo" />
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <p class="service-message">
+            Have a project in mind or need assistance?
+            <a href="#">Let's Get Started</a>
+          </p>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section-container">
+          <!-- Heading -->
+          <div class="section-heading">
+            <span><i class="fa-regular fa-file-lines"></i> Resume</span>
+            <h3>Experience and Education</h3>
+          </div>
+
+          <!-- Resume Container -->
+          <div class="edu-work-container">
+            <!-- Education Container -->
+            <div class="edu-container">
+              <span class="edu-work-label">
+                <i class="fa-solid fa-building-columns"></i>
+                Education
+              </span>
+
+              <!-- Edu Box Container -->
+              <div class="edu-work-box-container">
+                <!-- Box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                  <span class="edu-work-year">2021-2025</span>
+                  <strong>BS in Information Technology</strong>
+                  <!-- <span class="edu-work-location"> Major in Programming </span> -->
+                  <span class="edu-work-location">
+                    Southern Leyte State University
+                  </span>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p> -->
+                </div>
+
+                <!-- Box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                  <span class="edu-work-year">2017-2019</span>
+                  <strong>ICT-Computer System Servicing</strong>
+                  <span class="edu-work-location"> Santo Niño Academy </span>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Container -->
+            <div class="work-container">
+              <span class="edu-work-label">
+                <i class="fa-solid fa-briefcase"></i>
+                Experience
+              </span>
+
+              <div class="edu-work-box-container">
+                <!-- Box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                  <span class="edu-work-year">JAN - MAY, 2025</span>
+                  <strong>Web Developer Intern</strong>
+                  <span class="edu-work-location">
+                    University Information Systems and Analytics
+                  </span>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p> -->
+                </div>
+
+                <!-- Box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                  <span class="edu-work-year">AUG - DEC, 2024</span>
+                  <strong>Capstone Project Programmer</strong>
+                  <span class="edu-work-location">
+                    Southern Leyte State University
+                  </span>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container">
+          <!-- Heading -->
+          <div class="section-heading">
+            <span><i class="fa-solid fa-paper-plane"></i> Contact</span>
+            <h3>Get in Touch</h3>
+          </div>
+
+          <!-- Container -->
+          <div class="contact-box-container">
+            <!-- Contact Box -->
+            <div class="contact-box bg-gradient" data-aos="fade-up">
+              <!-- icon -->
+              <div class="contact-box-icon">
+                <i class="fa-solid fa-address-book"></i>
+                <strong>Phone</strong>
+              </div>
+              <!-- Detail -->
+              <span>+63 956 506 8421</span>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="contact-box bg-gradient" data-aos="fade-up">
+              <!-- icon -->
+              <div class="contact-box-icon">
+                <i class="fa-solid fa-envelope"></i>
+                <strong>Email</strong>
+              </div>
+              <!-- Detail -->
+              <span>ballebasjomarjade@gmail.com</span>
+            </div>
+
+            <!-- Contact Box -->
+            <div
+              class="contact-box bg-gradient contact-box-location"
+              data-aos="fade-up"
+            >
+              <!-- icon -->
+              <div class="contact-box-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <strong>Location</strong>
+              </div>
+              <!-- Detail -->
+              <span>Pasil (Pob.), Malitbog, Southern Leyte, PH</span>
+            </div>
+          </div>
+
+          <div class="contact-map" data-aos="fade-up">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62833.04792397553!2d124.9185079374035!3d10.175331896362877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33073b79dd87eccb%3A0xaadf50ae401de1c2!2sMalitbog%2C%20Southern%20Leyte!5e0!3m2!1sen!2sph!4v1750723753497!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Aos Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- main js -->
+    <script>
+      // word transition effects
+      document.addEventListener("DOMContentLoaded", () => {
+        const roles = [
+          "Web Developer",
+          "Software Engineer",
+          "Full Stack Developer",
+          "Laravel Developer",
+        ];
+        const roleElement = document.getElementById("role");
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let typingInterval;
+
+        function typeRole() {
+          roleElement.style.opacity = 0;
+          setTimeout(() => {
+            roleElement.textContent = "";
+            charIndex = 0;
+
+            typingInterval = setInterval(() => {
+              if (charIndex < roles[roleIndex].length) {
+                roleElement.textContent += roles[roleIndex].charAt(charIndex);
+                charIndex++;
+              } else {
+                clearInterval(typingInterval);
+                setTimeout(() => {
+                  roleIndex = (roleIndex + 1) % roles.length;
+                  typeRole();
+                }, 1000);
+              }
+            }, 100);
+
+            roleElement.style.opacity = 1;
+          }, 500);
+        }
+        typeRole();
+      });
+
+      // project filter
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".project-list li");
+        const projects = document.querySelectorAll(".project-box");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to the clicked button
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            projects.forEach((project) => {
+              if (
+                filterValue === "all" ||
+                project.dataset.category === filterValue
+              ) {
+                project.style.display = "block";
+              } else {
+                project.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+
+      // toggle dark/light mode
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.querySelector(".dark-light-btn");
+        const htmlElement = document.documentElement;
+
+        const currentMode = localStorage.getItem("mode");
+
+        if (currentMode === "light") {
+          htmlElement.classList.add("light-mode");
+          toggleButton.innerHTML = '<i class="fa-regular fa-moon"></i>';
+        }
+
+        toggleButton.addEventListener("click", () => {
+          htmlElement.classList.toggle("light-mode");
+
+          const isLightMode = htmlElement.classList.contains("light-mode");
+          toggleButton.innerHTML = isLightMode
+            ? '<i class="fa-regular fa-moon"></i>'
+            : '<i class="fa-regular fa-sun"></i>';
+
+          localStorage.setItem("mode", isLightMode ? "light" : "dark");
+        });
+      });
+
+      // active nav link
+      const section = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("ul li a");
+
+      function setActiveLink() {
+        let currentSection = "";
+
+        section.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", setActiveLink);
+
+      // aos initialization
+      AOS.init();
+    </script>
+  </body>
+</html>
