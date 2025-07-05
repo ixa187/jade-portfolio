@@ -604,7 +604,7 @@ h6 {
 
 .skill-item i {
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .skill-item img {
