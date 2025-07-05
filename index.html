@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
-    <title>jade - Portfolio</title>
+    <title>Jomar Jade Ballebas - Web Developer</title>
     <!-- Link CSS File-->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Favicon -->
@@ -28,581 +28,638 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="main-container">
-      <!-- Menu and Profile -->
-      <div class="menu-profile">
-        <!-- Header -->
-        <header>
-          <nav>
-            <!-- Dark-ligth mode btn -->
-            <button class="dark-light-btn bg-gradient">
-              <i class="fa-regular fa-sun"></i>
-            </button>
-            <!-- Nav Menu -->
-            <ul>
-              <!-- About -->
-              <li>
-                <a href="#about" data-label="About" class="active"
-                  ><i class="fa-solid fa-address-book"></i
-                ></a>
-              </li>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>jade.dev</span>
+        </div>
 
-              <!-- Projects -->
-              <li>
-                <a href="#projects" data-label="Projects"
-                  ><i class="fa-solid fa-briefcase"></i
-                ></a>
-              </li>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-              <!-- Skill -->
-              <li>
-                <a href="#skills" data-label="Skills"
-                  ><i class="fa-solid fa-layer-group"></i
-                ></a>
-              </li>
+        <div class="nav-actions">
+          <button class="theme-toggle">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-              <!-- Education and Work (Resume) -->
-              <li>
-                <a href="#resume" data-label="Resume"
-                  ><i class="fa-solid fa-file-lines"></i
-                ></a>
-              </li>
-
-              <!-- Clients -->
-              <!-- <li>
-                <a href="#" data-label="Testimonials"
-                  ><i class="fa-solid fa-comment-dots"></i
-                ></a>
-              </li> -->
-
-              <!-- Contact -->
-              <li>
-                <a href="#contact" data-label="Contact"
-                  ><i class="fa-solid fa-paper-plane"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        <!-- Profile Container-->
-        <div class="profile-container">
-          <div class="user-profile bg-gradient">
-            <!-- profile box -->
-            <div class="user-profile-container">
-              <!-- Profile Image -->
-              <div class="user-profile-img">
-                <img src="images/profile-1.jpg" alt="Jomar Jade Ballebas" />
-              </div>
-
-              <!-- Text -->
-              <div class="user-profile-text">
-                <span>Web Developer</span>
-                <h1>Jomar Jade</h1>
-
-                <!--Socials -->
-                <div class="profile-social-container">
-                  <!-- GitHub -->
-                  <a href="https://github.com/ixa187"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                  <!-- Facebook -->
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <!-- Instagram -->
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <!-- Twitter -->
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-              </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="availability-badge">
+              <span class="status-dot"></span>
+              <span>Available for Hire</span>
             </div>
-            <!-- btns -->
-            <div class="user-profile-btns">
-              <a href="cv/JomarJade-CV.pdf" download taret="_blank"
-                >Download CV</a
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Jade</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+              <span id="role">Full Stack Developer</span>
+            </h2>
+
+            <p class="hero-description">
+              A passionate Full Stack Web Developer specializing in PHP,
+              Laravel, and modern web technologies. I create scalable,
+              user-centric solutions that bring ideas to life.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="cv/JomarJade-CV.pdf" download class="btn btn-secondary">
+                <i class="fa-solid fa-download"></i>
+                Download CV
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <a
+                href="https://github.com/ixa187"
+                target="_blank"
+                class="social-link"
               >
-              <a href="#contact">Contact Me</a>
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jomar-jade-ballebas-3462b1247"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://web.facebook.com/jaadddeeeeeee/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="images/profile-1.jpg" alt="Jomar Jade Ballebas" />
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <div class="scroll-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Turning Ideas Into Reality</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a dedicated Bachelor of Science in Information Technology
+              graduate with a major in Programming, complemented by real-world
+              experience as a Web Developer Intern. I specialize in creating
+              scalable, user-centric web solutions using modern technologies.
+            </p>
+            <p>
+              Passionate about building efficient applications that solve
+              real-world problems and eager to contribute to dynamic development
+              teams.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">1+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- all content -->
-      <div class="all-content">
-        <!-- About Section-->
-        <section id="about" class="section-container">
-          <h3>Hello, I'm a <span id="role">Web Developer</span></h3>
-          <h1>
-            Full Stack Web Developer and <span>Laravel</span> Developer based in
-            Philippines
-          </h1>
-          <p>
-            A dedicated Bachelor of Science in Information Technology graduate
-            with a major in Programming, complemented by real-world experience
-            as a Web Developer Intern. Skilled in PHP, Laravel, MySQL, HTML,
-            CSS, JavaScript, jQuery, and version control using Git/GitHub.
-            Passionate about building user-centric, scalable web solutions and
-            eager to contribute to a dynamic development team.
-          </p>
-          <!-- Projects Completed-->
-          <!-- <div class="project-container-about">
-           
-            <div class="project-container-box">
-              <span>1</span>
-              <strong>Completed Projects</strong>
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tech Stack</span>
+          <h2 class="section-title">Technologies I Work With</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <!-- <img src="images/jquery.png" alt="jQuery" /> -->
+                <i class="fa-solid fa-code"></i>
+                <span>jQuery</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap 5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-css"></i>
+                <span>Tailwind CSS</span>
+              </div>
             </div>
-
-            
-            <div class="project-container-box">
-              <span>1+</span>
-              <strong>Years of Exerience</strong>
-            </div>
-
-            
-            <div class="project-container-box">
-              <span>2</span>
-              <strong>Personal Projects (Development)</strong>
-            </div>
-          </div> -->
-        </section>
-
-        <!-- Projects Secion-->
-        <section id="projects" class="section-container">
-          <!-- Heading -->
-          <div class="section-heading">
-            <span><i class="fa-solid fa-briefcase"></i> Projects</span>
-            <h3>Explore Projects by Technology</h3>
           </div>
 
-          <!-- Filter -->
-          <ul class="project-list">
-            <li class="active" data-filter="all">All</li>
-            <li data-filter="Laravel">Laravel</li>
-            <!-- Add Here for more projects -->
-            <!-- <li data-filter="Figma">Figma</li> -->
-          </ul>
-
-          <!-- Project Container -->
-          <div class="project-container">
-            <!-- Project Box -->
-            <a
-              href="https://prms.ccsit.info/"
-              class="project-box"
-              data-category="Laravel"
-              target="_blank"
-            >
-              <!-- Image -->
-              <div class="project-box-img">
-                <img src="images/project-1.png" alt="project 1" />
-              </div>
-
-              <div class="project-box-text-container">
-                <!-- details -->
-                <div class="project-box-text">
-                  <strong>Rural Health Unit Information System</strong>
-                  <span>Laravel</span>
-                </div>
-
-                <!-- link icon -->
-                <div class="project-box-btn">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
-              </div>
-            </a>
-
-            <!-- Project Box -->
-            <!-- <a
-              href="#"
-              class="project-box"
-              data-category="Figma"
-              target="_blank"
-            >
-       
-              <div class="project-box-img">
-                <img src="images/project-1.png" alt="project 1" />
-              </div>
-
-              <div class="project-box-text-container">
-          
-                <div class="project-box-text">
-                  <strong>Figma Project</strong>
-                  <span>figma</span>
-                </div>
-
-            
-                <div class="project-box-btn">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
-              </div>
-            </a> -->
-          </div>
-        </section>
-
-        <!-- Skills Section-->
-        <section id="skills" class="section-container">
-          <!-- Heading -->
-          <div class="section-heading">
-            <span
-              ><i class="fa-solid fa-layer-group"></i> Technical Skills</span
-            >
-            <h3>Technologies</h3>
-          </div>
-
-          <!-- Skills Container -->
-          <div class="skill-box-container">
-            <!-- PHP -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-php" style="color: #8d96c0"></i>
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <i class="fa-brands fa-php"></i>
                 <span>PHP</span>
               </div>
-            </div>
-
-            <!-- Laravel -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-laravel" style="color: #f22b02"></i>
+              <div class="skill-item">
+                <i class="fa-brands fa-laravel"></i>
                 <span>Laravel</span>
               </div>
             </div>
+          </div>
 
-            <!-- HTML -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-html5" style="color: #e5532d"></i>
-                <span>HTML</span>
-              </div>
-            </div>
-
-            <!-- CSS -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-css3-alt" style="color: #6b399c"></i>
-                <span>CSS</span>
-              </div>
-            </div>
-
-            <!-- Javascript -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-js" style="color: #f0dc55"></i>
-                <span>Javascript</span>
-              </div>
-            </div>
-
-            <!-- jQuery -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <img src="images/jquery.png" alt="jQuery Logo" />
-                <span>jQuery</span>
-              </div>
-            </div>
-
-            <!-- Git -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-git-alt" style="color: #f05639"></i>
-                <span>Git</span>
-              </div>
-            </div>
-
-            <!-- GitHub -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <i class="fa-brands fa-square-github" style="color: white"></i>
-                <span>GitHub</span>
-              </div>
-            </div>
-
-            <!-- MySQL -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <img src="images/mysql.png" alt="MySQL Logo" />
+          <!-- Database & Tools -->
+          <div class="skill-category">
+            <h3 class="category-title">Database & Tools</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <!-- <img src="images/mysql.png" alt="MySQL" /> -->
+                <i class="fa-solid fa-database"></i>
                 <span>MySQL</span>
               </div>
-            </div>
-
-            <!-- Python -->
-            <div class="skill-box bg-gradient" data-aos="fade-up">
-              <div class="skill-box-content">
-                <img src="images/python-logo.svg" alt="Python Logo" />
-                <span>Python</span>
+              <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>VS Code</span>
               </div>
             </div>
           </div>
 
-          <!-- Message -->
-          <p class="service-message">
-            Have a project in mind or need assistance?
-            <a href="#">Let's Get Started</a>
+          <!-- Design -->
+          <div class="skill-category">
+            <h3 class="category-title">Design</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="skill-item">
+                <!-- <img src="images/canva.png" alt="Canva" /> -->
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <img
+                src="images/project-1.png"
+                alt="Rural Health Unit Information System"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://prms.ccsit.info/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fa-solid fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <h3 class="project-title">
+                Capstone Project: Patient Record Management System with
+                Analytics and Geographical Information System
+              </h3>
+              <p class="project-description">
+                A comprehensive health management system for the Rural Health
+                Unit in Bato, Leyte, designed to manage patient records,
+                consultations, and diagnoses. Integrated analytics for monthly
+                reporting and case distribution, along with GIS mapping for
+                barangay-level health data. Implemented secure, role-based
+                access control for various healthcare staff.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <p>
+            Have a project in mind?
+            <a href="#contact" class="inline-link">Let's work together</a>
           </p>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="section-container">
-          <!-- Heading -->
-          <div class="section-heading">
-            <span><i class="fa-regular fa-file-lines"></i> Resume</span>
-            <h3>Experience and Education</h3>
-          </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Background</span>
+          <h2 class="section-title">Experience & Education</h2>
+        </div>
 
-          <!-- Resume Container -->
-          <div class="edu-work-container">
-            <!-- Education Container -->
-            <div class="edu-container">
-              <span class="edu-work-label">
-                <i class="fa-solid fa-building-columns"></i>
-                Education
-              </span>
+        <div class="timeline-grid">
+          <!-- Experience -->
+          <div class="timeline-section">
+            <h3 class="timeline-header">
+              <i class="fa-solid fa-briefcase"></i>
+              Experience
+            </h3>
 
-              <!-- Edu Box Container -->
-              <div class="edu-work-box-container">
-                <!-- Box -->
-                <div class="edu-work-box" data-aos="fade-up">
-                  <span class="edu-work-year">2021-2025</span>
-                  <strong>BS in Information Technology</strong>
-                  <!-- <span class="edu-work-location"> Major in Programming </span> -->
-                  <span class="edu-work-location">
-                    Southern Leyte State University
-                  </span>
-                  <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p> -->
-                </div>
-
-                <!-- Box -->
-                <div class="edu-work-box" data-aos="fade-up">
-                  <span class="edu-work-year">2017-2019</span>
-                  <strong>ICT-Computer System Servicing</strong>
-                  <span class="edu-work-location"> Santo Niño Academy </span>
-                  <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p> -->
+            <div class="timeline">
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-date">JAN - MAY 2025</div>
+                <div class="timeline-content">
+                  <h4>Web Developer Intern</h4>
+                  <span class="timeline-company"
+                    >University Information Systems and Analytics</span
+                  >
+                  <p>
+                    Developed and maintained web applications using Laravel
+                    framework, collaborated with team on system improvements.
+                  </p>
                 </div>
               </div>
-            </div>
 
-            <!-- Work Container -->
-            <div class="work-container">
-              <span class="edu-work-label">
-                <i class="fa-solid fa-briefcase"></i>
-                Experience
-              </span>
-
-              <div class="edu-work-box-container">
-                <!-- Box -->
-                <div class="edu-work-box" data-aos="fade-up">
-                  <span class="edu-work-year">JAN - MAY, 2025</span>
-                  <strong>Web Developer Intern</strong>
-                  <span class="edu-work-location">
-                    University Information Systems and Analytics
-                  </span>
-                  <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p> -->
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-date">AUG - DEC 2024</div>
+                <div class="timeline-content">
+                  <h4>Capstone Project Programmer</h4>
+                  <span class="timeline-company"
+                    >Southern Leyte State University</span
+                  >
+                  <p>
+                    Assisted in the development of a Rural Health Unit
+                    Information System as a capstone project, implementing
+                    full-stack solutions.
+                  </p>
                 </div>
+              </div>
 
-                <!-- Box -->
-                <div class="edu-work-box" data-aos="fade-up">
-                  <span class="edu-work-year">AUG - DEC, 2024</span>
-                  <strong>Capstone Project Programmer</strong>
-                  <span class="edu-work-location">
-                    Southern Leyte State University
-                  </span>
-                  <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p> -->
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                  <h4>Hello World! 👋🏻</h4>
+                  <span class="timeline-company"
+                    >Wrote my first line of code. Console.WriteLine("Hello
+                    World!");</span
+                  >
+                  <p>
+                    Took my first steps into programming by writing my first
+                    line of code in C#.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section-container">
-          <!-- Heading -->
-          <div class="section-heading">
-            <span><i class="fa-solid fa-paper-plane"></i> Contact</span>
-            <h3>Get in Touch</h3>
+          <!-- Education -->
+          <div class="timeline-section">
+            <h3 class="timeline-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Education
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-date">2021 - 2025</div>
+                <div class="timeline-content">
+                  <h4>BS in Information Technology</h4>
+                  <span class="timeline-company"
+                    >Southern Leyte State University</span
+                  >
+                  <p>
+                    Major in Programming. Focused on web development, database
+                    management, and software engineering principles.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-date">2017 - 2019</div>
+                <div class="timeline-content">
+                  <h4>ICT-Computer System Servicing</h4>
+                  <span class="timeline-company">Santo Niño Academy</span>
+                  <p>
+                    Technical-Vocational education in computer systems,
+                    hardware, and basic programming fundamentals.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Container -->
-          <div class="contact-box-container">
-            <!-- Contact Box -->
-            <div class="contact-box bg-gradient" data-aos="fade-up">
-              <!-- icon -->
-              <div class="contact-box-icon">
-                <i class="fa-solid fa-address-book"></i>
-                <strong>Phone</strong>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <p class="contact-description">
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question or just want to say hi, feel free to
+              reach out!
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-item" data-aos="fade-up">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <a href="mailto:ballebasjomarjade@gmail.com"
+                    >ballebasjomarjade@gmail.com</a
+                  >
+                </div>
               </div>
-              <!-- Detail -->
-              <span>+63 956 506 8421</span>
+
+              <div class="contact-item" data-aos="fade-up">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <a href="tel:+639565068421">+63 956 506 8421</a>
+                </div>
+              </div>
+
+              <div class="contact-item" data-aos="fade-up">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <span>Malitbog, Southern Leyte, PH</span>
+                </div>
+              </div>
             </div>
 
-            <!-- Contact Box -->
-            <div class="contact-box bg-gradient" data-aos="fade-up">
-              <!-- icon -->
-              <div class="contact-box-icon">
-                <i class="fa-solid fa-envelope"></i>
-                <strong>Email</strong>
-              </div>
-              <!-- Detail -->
-              <span>ballebasjomarjade@gmail.com</span>
-            </div>
-
-            <!-- Contact Box -->
-            <div
-              class="contact-box bg-gradient contact-box-location"
-              data-aos="fade-up"
-            >
-              <!-- icon -->
-              <div class="contact-box-icon">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <strong>Location</strong>
-              </div>
-              <!-- Detail -->
-              <span>Pasil (Pob.), Malitbog, Southern Leyte, PH</span>
+            <div class="contact-social">
+              <a
+                href="https://github.com/ixa187"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jomar-jade-ballebas-3462b1247"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://web.facebook.com/jaadddeeeeeee/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
             </div>
           </div>
 
           <div class="contact-map" data-aos="fade-up">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62833.04792397553!2d124.9185079374035!3d10.175331896362877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33073b79dd87eccb%3A0xaadf50ae401de1c2!2sMalitbog%2C%20Southern%20Leyte!5e0!3m2!1sen!2sph!4v1750723753497!5m2!1sen!2sph"
-              width="600"
-              height="450"
-              style="border: 0"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 12px"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            >
+            </iframe>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Aos Animation -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Jomar Jade Ballebas. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- main js -->
+    <!-- Main JavaScript -->
     <script>
-      // word transition effects
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      // Role typing animation
       document.addEventListener("DOMContentLoaded", () => {
         const roles = [
-          "Web Developer",
-          "Software Engineer",
           "Full Stack Developer",
           "Laravel Developer",
+          "Web Developer",
+          "Software Engineer",
         ];
         const roleElement = document.getElementById("role");
-
         let roleIndex = 0;
         let charIndex = 0;
-        let typingInterval;
+        let isDeleting = false;
 
-        function typeRole() {
-          roleElement.style.opacity = 0;
-          setTimeout(() => {
-            roleElement.textContent = "";
-            charIndex = 0;
+        function typeEffect() {
+          const currentRole = roles[roleIndex];
 
-            typingInterval = setInterval(() => {
-              if (charIndex < roles[roleIndex].length) {
-                roleElement.textContent += roles[roleIndex].charAt(charIndex);
-                charIndex++;
-              } else {
-                clearInterval(typingInterval);
-                setTimeout(() => {
-                  roleIndex = (roleIndex + 1) % roles.length;
-                  typeRole();
-                }, 1000);
-              }
-            }, 100);
+          if (isDeleting) {
+            roleElement.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            roleElement.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+          }
 
-            roleElement.style.opacity = 1;
-          }, 500);
+          let typeSpeed = isDeleting ? 50 : 100;
+
+          if (!isDeleting && charIndex === currentRole.length) {
+            typeSpeed = 2000;
+            isDeleting = true;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+          }
+
+          setTimeout(typeEffect, typeSpeed);
         }
-        typeRole();
+
+        typeEffect();
       });
 
-      // project filter
-      document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll(".project-list li");
-        const projects = document.querySelectorAll(".project-box");
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
 
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            // Remove active class from all buttons
-            filterButtons.forEach((btn) => btn.classList.remove("active"));
-            // Add active class to the clicked button
-            this.classList.add("active");
+      // Mobile menu toggle
+      const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+      const navMenu = document.querySelector(".nav-menu");
 
-            const filterValue = this.getAttribute("data-filter");
+      mobileMenuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        mobileMenuToggle.classList.toggle("active");
+      });
 
-            projects.forEach((project) => {
-              if (
-                filterValue === "all" ||
-                project.dataset.category === filterValue
-              ) {
-                project.style.display = "block";
-              } else {
-                project.style.display = "none";
-              }
+      // Theme toggle
+      const themeToggle = document.querySelector(".theme-toggle");
+      const htmlElement = document.documentElement;
+
+      // Check for saved theme
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme === "light") {
+        htmlElement.classList.add("light-theme");
+        themeToggle.innerHTML = '<i class="fa-regular fa-sun"></i>';
+      }
+
+      themeToggle.addEventListener("click", () => {
+        htmlElement.classList.toggle("light-theme");
+        const isLight = htmlElement.classList.contains("light-theme");
+
+        themeToggle.innerHTML = isLight
+          ? '<i class="fa-regular fa-sun"></i>'
+          : '<i class="fa-regular fa-moon"></i>';
+
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
-          });
+          }
         });
       });
 
-      // toggle dark/light mode
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.querySelector(".dark-light-btn");
-        const htmlElement = document.documentElement;
+      // Active navigation highlighting
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
 
-        const currentMode = localStorage.getItem("mode");
-
-        if (currentMode === "light") {
-          htmlElement.classList.add("light-mode");
-          toggleButton.innerHTML = '<i class="fa-regular fa-moon"></i>';
-        }
-
-        toggleButton.addEventListener("click", () => {
-          htmlElement.classList.toggle("light-mode");
-
-          const isLightMode = htmlElement.classList.contains("light-mode");
-          toggleButton.innerHTML = isLightMode
-            ? '<i class="fa-regular fa-moon"></i>'
-            : '<i class="fa-regular fa-sun"></i>';
-
-          localStorage.setItem("mode", isLightMode ? "light" : "dark");
-        });
-      });
-
-      // active nav link
-      const section = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll("ul li a");
-
-      function setActiveLink() {
-        let currentSection = "";
-
-        section.forEach((section) => {
+      function updateActiveNav() {
+        let current = "";
+        sections.forEach((section) => {
           const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-
-          if (window.scrollY >= sectionTop - sectionHeight / 3) {
-            currentSection = section.getAttribute("id");
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
           }
         });
 
         navLinks.forEach((link) => {
           link.classList.remove("active");
-          if (link.getAttribute("href") === `#${currentSection}`) {
+          if (link.getAttribute("href") === `#${current}`) {
             link.classList.add("active");
           }
         });
       }
 
-      window.addEventListener("scroll", setActiveLink);
-
-      // aos initialization
-      AOS.init();
+      window.addEventListener("scroll", updateActiveNav);
     </script>
   </body>
 </html>
