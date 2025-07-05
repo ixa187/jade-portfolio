@@ -120,6 +120,13 @@ h6 {
   font-weight: 500;
   color: var(--secondary);
   margin-bottom: 1.5rem;
+  min-height: 3rem; /* Prevent layout shift */
+}
+
+.hero-subtitle #role {
+  display: inline-block;
+  min-width: 280px; /* Set minimum width to prevent shifting */
+  text-align: left;
 }
 
 .section-title {
@@ -476,6 +483,7 @@ h6 {
   transform: translateX(-50%);
   text-align: center;
   color: var(--text-tertiary);
+  z-index: 10;
 }
 
 .scroll-arrow {
@@ -617,7 +625,7 @@ h6 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -628,6 +636,8 @@ h6 {
   border-radius: var(--radius-xl);
   overflow: hidden;
   transition: all var(--transition-normal);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .project-card:hover {
@@ -637,7 +647,7 @@ h6 {
 
 .project-image {
   position: relative;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -691,7 +701,7 @@ h6 {
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .project-tech {
@@ -947,6 +957,16 @@ h6 {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    min-height: 70vh; /* Reduce minimum height on mobile */
+  }
+
+  .hero-text {
+    order: 2; /* Move text below image on mobile */
+  }
+
+  .hero-image {
+    order: 1; /* Move image above text on mobile */
+    margin-bottom: 1rem;
   }
 
   .image-container {
@@ -954,8 +974,19 @@ h6 {
     height: 280px;
   }
 
+  .scroll-indicator {
+    bottom: 1rem; /* Move closer to bottom on mobile */
+    z-index: 20;
+  }
+
+  .hero-description {
+    text-align: center;
+    max-width: 100%;
+  }
+
   .hero-buttons {
     justify-content: center;
+    margin-bottom: px; /* Add more space below buttons on mobile */
   }
 
   .contact-content {
@@ -977,12 +1008,25 @@ h6 {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 90vh; /* Reduce hero height on small screens */
+  }
+
+  .hero-content {
+    min-height: 60vh; /* Further reduce on small screens */
+    gap: 1.5rem;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
 
   .hero-subtitle {
     font-size: 1.5rem;
+  }
+
+  .hero-subtitle #role {
+    min-width: 200px; /* Smaller minimum width for mobile */
   }
 
   .section-title {
@@ -992,6 +1036,16 @@ h6 {
   .image-container {
     width: 240px;
     height: 240px;
+    margin-top: 120px;
+  }
+
+  .scroll-indicator {
+    bottom: 0.5rem; /* Even closer to bottom on small screens */
+    font-size: 0.875rem;
+  }
+
+  .scroll-arrow {
+    margin-top: 0.25rem;
   }
 
   .btn {
@@ -1005,6 +1059,16 @@ h6 {
 
   .project-content {
     padding: 1rem;
+  }
+
+  .hero-social,
+  .contact-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    margin-bottom: 5rem; /* Even more space on small screens */
   }
 }
 
